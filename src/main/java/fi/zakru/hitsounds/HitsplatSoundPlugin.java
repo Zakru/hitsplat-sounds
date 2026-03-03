@@ -102,7 +102,7 @@ public class HitsplatSoundPlugin extends Plugin
 				if (!normalizedPath.startsWith(SOUND_DIRECTORY))
 				{
 					log.warn("Sound path outside sound directory");
-					return;
+					continue;
 				}
 
 				// I don't know how necessary this is, I don't notice any impact when running this raw on my machine,
@@ -114,8 +114,6 @@ public class HitsplatSoundPlugin extends Plugin
 						log.warn("Failed to play {}", rule.getSoundFile(), e);
 					}
 				});
-
-				return;
 			}
 		}
 	}
