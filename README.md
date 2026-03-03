@@ -32,3 +32,11 @@ When I deal exactly 10 normal damage to an opponent
 ```
 damage,own,-self,10:sound.wav
 ```
+
+Play sounds with an intensity based on the damage
+
+```
+damage,own,-self,-29:light.wav
+damage,own,-self,30-:heavy.wav
+damage,own,-self,max:crit.wav
+```

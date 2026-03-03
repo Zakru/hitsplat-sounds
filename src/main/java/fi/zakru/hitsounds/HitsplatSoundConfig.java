@@ -50,6 +50,10 @@ public interface HitsplatSoundConfig extends Config
 				"Lines starting with a # are ignored.\n\n" +
 				"# Examples\n\n" +
 				"# When I deal exactly 10 normal damage to an opponent\n" +
-				"damage,own,-self,10:sound.wav";
+				"damage,own,-self,10:sound.wav\n\n" +
+				"# Play sounds with an intensity based on the damage\n" +
+				"damage,own,-self,-29:light.wav\n" +
+				"damage,own,-self,30-:heavy.wav\n" +
+				"damage,own,-self,max:crit.wav";
 	}
  }
